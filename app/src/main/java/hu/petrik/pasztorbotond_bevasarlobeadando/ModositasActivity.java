@@ -152,10 +152,8 @@ public class ModositasActivity extends AppCompatActivity {
                 .setNegativeButton("Nem", null);
 
         alertDialog = builder.create();
+        alertDialog.show();
 
-        if (!isFinishing()) { // Csak akkor jelenítsd meg, ha az Activity még aktív
-            alertDialog.show();
-        }
     }
 
     void init(){
